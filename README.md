@@ -47,3 +47,13 @@ The weighted entry averages rank-normalized LightGBM predictions from seeds 42 a
 The stacking entry uses five out-of-fold prediction columns: both LightGBM seeds, the XGBoost-CatBoost ensemble, a LightGBM model with grouped interaction constraints, and a CatBoost model over native categorical features. It fits a nonnegative logistic model on rank-transformed predictions in five-fold cross-fitting for each of the two seeds. Fold test scores are averaged, then the two seed scores are rank-averaged. Target encodings are cross-fitted inside each training fold.
 
 The LightGBM feature recipe adapts [Naji's public notebook](https://www.kaggle.com/code/najiama/pure-lgbm-model-cv-0-94607-lb-0-94638); its Apache 2.0 license is included in `THIRD_PARTY_LICENSE.txt`. The implementation was rewritten here to make the selected pipeline directly runnable. The original data is credited to [its Kaggle dataset author](https://www.kaggle.com/datasets/itzzomkar/ev-adoption-behavior-and-range-anxiety). The final scores above are historical competition results, not a guarantee that retraining on different hardware will reproduce identical CSV hashes or leaderboard scores.
+
+## Project provenance
+
+This is a course-project implementation and result presentation. External
+datasets and adapted feature ideas remain credited to their original sources.
+Download source data separately and retain applicable third-party notices.
+The reported leaderboard results describe the original competition entries;
+retraining on a different device or library version may produce different
+probabilities. No credentials, personal submission report, model cache, or
+machine-specific account directory is required by this checkout.

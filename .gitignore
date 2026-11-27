@@ -4,3 +4,16 @@ outputs/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Local environments and private submission material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+*.pyc
+private/
+identity.tex
+*_submission_private.*
